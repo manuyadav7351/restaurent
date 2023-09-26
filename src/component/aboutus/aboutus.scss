@@ -39,6 +39,7 @@
     justify-content: space-between;
 }
 
+/* media query for width less then 940 px */
 
 @media (width < 940px) {
     .aboutus-top h1{
@@ -47,5 +48,17 @@
 
     .aboutus-top p{
         font-size: 19px;
+    }
+}
+
+/* media query for width less then 720 px */
+
+@media (width < 940px) {
+    .aboutus-top h1{
+        font-size: 30px;
+    }
+
+    .aboutus-top p{
+        font-size: 17px;
     }
 }
