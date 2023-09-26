@@ -1,0 +1,162 @@
+.header{
+    background-image: url("../../assets/hero.jpg");
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-info{
+    text-align: center;
+    z-index: 2;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+
+.header-quote{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.header-span{
+    color: #fff;
+}
+
+.header-cards{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    height: 280px;
+    width: 200px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 0 0 10px #b7b5b5;
+    background-color: #222;
+}
+
+.card img{
+    height: 85%;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.price{
+    height: 15%;
+    background-color: #b7b5b5;
+}
+
+
+.header-register button{
+    width: 7em;
+    height: 2em;
+    background-color: #717371;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* media query for width less then 940px*/
+
+@media screen and (max-width: 940px) {
+    .header {
+      background-image: none;
+      position: relative;
+    }
+
+    .header-divide{
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .divide1{
+        flex: 1;
+        background-color: #222;
+    }
+
+    .divide2{
+        flex: 1;
+        background-color: #504c4c;
+    }
+
+    .header-info{
+        position: absolute;
+    }
+
+    .card{
+        height: 240px;
+        width: 200px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        box-shadow: 0 0 10px #b7b5b5;
+        background-color: #222;
+    }
+
+    .header-register button{
+        margin-top: 20px;
+        width: 5em;
+        height: 1.5em;
+        background-color: #626462;
+        border: none;
+        outline: none;
+        font-size: 30px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+/* media query for width less then 720px */
+
+@media (width <= 720px) {
+
+
+    .header{
+        font-size: 15px;
+    }
+
+    .header-quote{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-cards{
+        gap: 80px;
+    }
+
+    .left-card{
+        height: 200px;
+        width: 130px;
+    }
+
+
+    .right-card{
+        height: 200px;
+        width: 130px;
+    }
+
+}
