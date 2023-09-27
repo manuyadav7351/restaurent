@@ -3,7 +3,13 @@ import "login.scss"
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className='Login'>
+      <form action="#">
+        <input type="email" placeholder='Email'/>
+        <input type="password" placeholder='Password'/>
+        <button>Login</button>
+      </form>
+    </div>
   )
 }
 
