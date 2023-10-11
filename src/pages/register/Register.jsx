@@ -14,10 +14,29 @@ const Register = () => {
     const [email , setEmail] = useState('');
     const [password , setPassword] = useState('');
 
+    const isValidEmail = (email) => {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailPattern.test(email);
+    }
+
+    const isValidPassword = (password) => {
+        if (password.length < 6) {
+            return false; // Password is too short
+        }
+        const hasNumber = /\d/.test(password)
+        const hadLetter = /[a-zA-Z]/.test(password)
+        return hadLetter && hasNumber;
+    }
+
     const handleRegister = () => {
-        if(name && email && password){
+        if(name && isValidEmail(email) && isValidPassword(password)){
             dispatch(register({name , email, password}))
             navigate('/')
+        }
+        else{
+            alert("enter a valid mail and Password ,\n Password Must be 6 character long and one number and letter is mandatory");
+            setEmail('')
+            setPassword('')
         }
     }
 

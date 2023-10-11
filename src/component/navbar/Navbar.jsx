@@ -37,11 +37,11 @@ const Navbar = () => {
                     {/* <li onClick={handleStorage}>Clear</li> */}
                     {isLoggedIn ? (
                         <>
+                            <li onClick={() => navigate("/reviews")}>REVIEWS</li>
                             <li>ORDER</li>
                             <li>
                                 <FiUser />
                             </li>
-                            <li onClick={() => navigate("/reviews")}>REVIEWS</li>
                             <li onClick={handleLogout}>LOGOUT</li>
                         </>
                     ) : (

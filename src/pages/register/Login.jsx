@@ -15,6 +15,8 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
+    alert("default login is , \n mail = tobi@gmail.com \n password = tobi@gmail.com")
+
     const [email , setEmail] = useState('')
     const [password, setPassword] = useState('')
     const dispatch =  useDispatch()

@@ -17,12 +17,11 @@ const Aboutus = () => {
         </div>
         <div className='aboutus-footer'>
           <ul>
-            <li>one</li>
-            <li>one</li>
-            <li>one</li>
-            <li>one</li>
-            <li>one</li>
-            <li>one</li>
+            <li>COMPANY</li>
+            <li>USEFUL LINKS</li>
+            <li>SOCIAL MEDIA</li>
+            <li>ADDRESS</li>
+            <li>FRANCHIESE</li>
           </ul>
         </div>
       </div>

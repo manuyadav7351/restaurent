@@ -26,6 +26,7 @@ const ContactUs = () => {
         setEmail('');
         setSubject('');
         setContent('');
+        alert('Request submitted successfully');
       }else{
         alert("all fields are required");
       }
