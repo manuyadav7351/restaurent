@@ -70,3 +70,11 @@
     margin: 1px;
     border-radius: 5px;
 }
+
+
+@media (540px <= width < 720px) {
+    .contactus{
+        width: 95%;
+        height: 50%;
+    }
+}

@@ -77,7 +77,7 @@
 
 /* media query for width less then 720px */
 
-@media (width < 940px) {
+@media (720px <= width < 940px) {
     .trending{
         background-position: top;
     }
@@ -85,12 +85,24 @@
     .trending-bottom{
         flex: 1.4;
     }
+
+    .trending-card{
+        height: 280px;
+        width: 200px;
+        background-color: rgb(116, 109, 109);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 5px white;
+    }
 }
 
 
-@media (width < 720px) {
+@media (540px <= width < 720px) {
     .trending-card{
-        height: 230px;
+        height: 220px;
         width: 150px;
     }
     
@@ -98,6 +110,22 @@
         height: 180px;
         width: 150px;
     }
+
+    .trending-card .trending-price{
+        font-size: 16px;
+    }
+
+    .trending-card .trending-orderNow{
+        font-size: 13px;
+        background-color: rgb(23, 213, 23);
+        color: black;
+        padding: 1px 10px;
+        border-top-right-radius: 2px;
+        border-top-left-radius: 2px;
+        font-weight: 600;
+        margin-top: 3px;
+    }
+    
 }
 
 @media (width < 540px) {

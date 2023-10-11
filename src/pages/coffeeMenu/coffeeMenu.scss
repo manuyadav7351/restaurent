@@ -87,3 +87,33 @@
     cursor: pointer;
     background-color: rgb(65, 255, 65);
 }
+
+@media (720px <= width < 940px) {
+    .Coffee-Menu-card{
+        height: 250px;
+        width: 180px;
+    }
+
+    .Coffee-Menu-bottom{
+        width: 90%;
+    }
+}
+
+@media (540px <= width < 720px) {
+    .Coffee-Menu-bottom{
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Coffee-Menu-card{
+        height: 230px;
+        width: 195px;
+    }
+
+    .Coffee-Menu-card .name{
+        color: white;
+        font-size: 18px;
+        font-family: Roboto, Oxygen, Ubuntu,;
+        font-weight: 200;
+    }
+}

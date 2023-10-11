@@ -28,7 +28,7 @@
 }
 
 .header-quote{
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -130,7 +130,7 @@
 
 /* media query for width less then 720px */
 
-@media (width <= 720px) {
+@media (54px <= width <= 720px) {
 
     .header-quote{
         color: #fff;
@@ -158,12 +158,12 @@
     }
 
     .card{
-        height: 200px;
-        width: 150px;
+        height: 220px;
+        width: 170px;
     }
 
     .header-cards{
-        width: 90%;
+        width: 80%;
     }    
 
 }

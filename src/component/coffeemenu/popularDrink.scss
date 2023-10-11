@@ -1,4 +1,4 @@
-.Drinks{
+.Drinks {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -7,23 +7,23 @@
     position: relative;
 }
 
-.divide{
+.divide {
     display: flex;
     height: 100%;
     width: 100%;
 }
 
-.div1{
+.div1 {
     flex: 1;
     background-color: rgb(155, 159, 163);
 }
 
-.div2{
+.div2 {
     flex: 1;
     background-color: black;
 }
 
-.drink-data{
+.drink-data {
     position: absolute;
     height: 80%;
     width: 100%;
@@ -33,8 +33,8 @@
     flex-direction: column;
 }
 
-.drink-heading{
-    font-family: Georgia, Times, 'Times New Roman', serif;
+.drink-heading {
+    font-family: Georgia, Times, "Times New Roman", serif;
     color: #fff;
     font-size: 4em;
     letter-spacing: 4px;
@@ -43,19 +43,18 @@
     top: 0;
 }
 
-
-.drink-slider{
+.drink-slider {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     width: 100%;
 }
 
-.drink-container{
+.drink-container {
     margin: 0 10px;
     display: flex;
     align-items: flex-end;
-    gap: 10%;
+    gap: 8%;
     width: 80%;
     height: 400px;
     overflow-x: scroll;
@@ -64,7 +63,7 @@
     scroll-behavior: smooth;
 }
 
-.drink-scroll{
+.drink-scroll {
     cursor: pointer;
     font-size: 20px;
     outline: none;
@@ -75,15 +74,13 @@
     background: #6a6969;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
-
-
-.drink-card{
-    height: 250px;
-    width: 200px;
+.drink-card-coffee {
+    height: 280px;
+    width: 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,21 +89,33 @@
     box-shadow: 0 0 5px white;
 }
 
-.drink-card img{
-    height: 200px;
-    width: 200px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.drink-card-image {
+    height: 80%;
+    width: 230px;
 }
 
-.drink-name{
+.drink-card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.drink-card-desc {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.drink-name {
     color: #fff;
     font-size: 16px;
     word-spacing: 5px;
 }
 
-.drink-order button{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.drink-order button {
+    font-family: Georgia, "Times New Roman", Times, serif;
     outline: none;
     border: none;
     font-size: 18px;
@@ -118,18 +127,16 @@
     padding: 1px 10px;
 }
 
-.scroll{
+.scroll {
     margin: 20px;
     display: flex;
     gap: 20px;
 }
 
-
 /* media query for width less then 960px*/
 
 @media (width <= 960px) {
-    
-    .drink-container{
+    .drink-container {
         margin: 0 10px;
         display: flex;
         align-items: flex-end;
@@ -137,28 +144,62 @@
         width: 85%;
     }
 
-    .drink-card{
+    .drink-card-coffee {
         height: 250px;
-        width: 200px;
+        width: 190px;
     }
 
-    .drink-card img{
-        width: auto;
+    .drink-card-image {
+        width: 190px;
     }
 
-    .drink-heading{
+    .drink-heading {
         font-size: 3em;
         letter-spacing: 3px;
     }
-    
 }
-
 
 /* media query for width less then 720px*/
 
-@media (width <= 540px) {
+@media (width <= 720px) {
+    .drink-container {
+        margin: 0 10px;
+        display: flex;
+        align-items: flex-end;
+        gap: 5%;
+        width: 85%;
+    }
 
-    .drink-container{
+    .drink-card-coffee {
+        height: 200px;
+        width: 160px;
+    }
+
+    .drink-card-image {
+        width: 160px;
+    }
+
+    .drink-heading {
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+
+    .drink-order button {
+        font-size: 14px;
+        padding: 1px 10px;
+    }
+
+    .drink-name {
+        color: #fff;
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+}
+
+/* media query for width less then 520px*/
+
+@media (width  < 540px) {
+    .drink-container {
         margin: 0 10px;
         display: flex;
         align-items: flex-end;
@@ -166,22 +207,28 @@
         width: 95%;
     }
 
-    .drink-card{
-        height: 250px;
-        width: 180px;
+    .drink-card {
+        height: 240px;
+        width: 190px;
     }
 
-    .drink-card img{
+    .drink-card img {
         width: auto;
     }
 
-    .drink-scroll{
+    .drink-scroll {
         font-size: 15px;
         padding: 8px 15px;
     }
-    
-    .drink-heading{
+
+    .drink-heading {
         font-size: 2em;
         letter-spacing: 3px;
+    }
+
+    .drink-name {
+        color: #fff;
+        font-size: 12px;
+        word-spacing: 2px;
     }
 }
