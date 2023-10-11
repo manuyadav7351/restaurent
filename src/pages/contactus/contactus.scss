@@ -1,0 +1,72 @@
+.contacts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactus{
+    width: 70%;
+    height: 50%;
+    background: rgba(67, 64, 64, 0.5);
+    box-shadow: 0 0 15px white;
+    border-radius: 5px;
+    padding: 30px 0px;
+}
+
+.contactus-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0px;
+}
+
+.contactus-credential{
+    width: 90%;
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+.contactus-input{
+    width: 70%;
+    line-height: 28px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contactus-subject{
+    width: 90%;
+}
+
+.contactus-input-subject{
+    border-radius: 5px;
+    width: 100%;
+    line-height: 28px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.subject{
+    width: 100%;
+}
+
+.contactus-textarea{
+    width: 90%;
+}
+
+.contactus-input-textarea{
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 28px;
+    padding: 5px;
+}
+
+.contactus-button-field{
+    line-height: 30px;
+    font-size: 20px;
+    width: 180px;
+    margin: 1px;
+    border-radius: 5px;
+}

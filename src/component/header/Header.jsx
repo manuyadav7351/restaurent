@@ -2,8 +2,13 @@ import React from 'react'
 import "./header.scss"
 import whiteCoffee from "../../assets/white-coffee.jpg";
 import blackCoffee from "../../assets/black-coffee.jpg";
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className='header'>
       <div className='header-divide'>
@@ -25,7 +30,7 @@ const Header = () => {
         </div>
         </div>
         <div className='header-register'>
-          <button>Register</button>
+          <button onClick={() => navigate("/register")}>Register</button>
         </div>
       </div>
     </div>

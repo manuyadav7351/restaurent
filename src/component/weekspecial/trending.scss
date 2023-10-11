@@ -1,7 +1,6 @@
 .trending{
     height: 100vh;
     width: 100%;
-    background-image: url("../../assets/meetme.jpg");
     background-position: 1% 60%;
     background-size: 100%;
     display: flex;
@@ -12,19 +11,6 @@
     background-color: currentColor;
 }
 
-.trending-top{
-    flex: .9;
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    font-family: cursive;
-}
-
-
-
 .trending-bottom{
     width: 100%;
     flex: 1;
@@ -33,6 +19,7 @@
     align-items: center;
     justify-content: space-around;
 }
+
 
 .trending-card{
     height: 250px;
@@ -95,9 +82,6 @@
 }
 
 @media (width < 540px) {
-    .trending-top{
-        flex: .6;
-    }
 
     .trending-bottom{
         width: 100%;

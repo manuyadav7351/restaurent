@@ -46,7 +46,7 @@
 
 .drink-slider{
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     width: 100%;
 }
@@ -54,9 +54,9 @@
 .drink-container{
     margin: 0 10px;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     gap: 10%;
-    width: 800px;
+    width: 80%;
     height: 400px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -128,17 +128,18 @@
 /* media query for width less then 960px*/
 
 @media (width <= 960px) {
-    .drink-card{
-        height: 250px;
-        width: 180px;
-    }
-
+    
     .drink-container{
         margin: 0 10px;
         display: flex;
-        align-items: end;
+        align-items: flex-end;
         gap: 5%;
-        width: 500px;
+        width: 85%;
+    }
+
+    .drink-card{
+        height: 250px;
+        width: 200px;
     }
 
     .drink-card img{
@@ -156,17 +157,18 @@
 /* media query for width less then 720px*/
 
 @media (width <= 540px) {
-    .drink-card{
-        height: 250px;
-        width: 180px;
-    }
 
     .drink-container{
         margin: 0 10px;
         display: flex;
-        align-items: end;
+        align-items: flex-end;
         gap: 6%;
-        width: 320px;
+        width: 95%;
+    }
+
+    .drink-card{
+        height: 250px;
+        width: 180px;
     }
 
     .drink-card img{

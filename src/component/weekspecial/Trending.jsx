@@ -5,8 +5,6 @@ import tren from "../../assets/trending/eiliv-aceron.jpg";
 const Trending = () => {
   return (
     <div className="trending">
-      <div className="trending-top">
-      </div>
       <div className="trending-bottom">
         {/* card */}
         <div className="trending-card">

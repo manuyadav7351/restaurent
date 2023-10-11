@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef} from "react";
 import "./popularDrink.scss";
 import drink from "../../assets/trending/nathan-dumlao.jpg";
 

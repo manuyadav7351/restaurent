@@ -1,0 +1,65 @@
+{
+    "coffeeMenu": [
+      {
+        "name": "Espresso",
+        "price": 3.99,
+        "imageUrl": "https://example.com/espresso.jpg",
+        "isSpecial": true
+      },
+      {
+        "name": "Cappuccino",
+        "price": 4.49,
+        "imageUrl": "https://example.com/cappuccino.jpg",
+        "isSpecial": true
+      },
+      {
+        "name": "Latte",
+        "price": 3.79,
+        "imageUrl": "https://example.com/latte.jpg",
+        "isSpecial": true
+      },
+      {
+        "name": "Mocha",
+        "price": 4.99,
+        "imageUrl": "https://example.com/mocha.jpg",
+        "isSpecial": false
+      },
+      {
+        "name": "Americano",
+        "price": 4.29,
+        "imageUrl": "https://example.com/americano.jpg",
+        "isSpecial": true
+      },
+      {
+        "name": "Macchiato",
+        "price": 3.59,
+        "imageUrl": "https://example.com/macchiato.jpg",
+        "isSpecial": false
+      },
+      {
+        "name": "Irish Coffee",
+        "price": 4.79,
+        "imageUrl": "https://example.com/irish-coffee.jpg",
+        "isSpecial": false
+      },
+      {
+        "name": "Caramel Macchiato",
+        "price": 4.69,
+        "imageUrl": "https://example.com/caramel-macchiato.jpg",
+        "isSpecial": true
+      },
+      {
+        "name": "Affogato",
+        "price": 3.89,
+        "imageUrl": "https://example.com/affogato.jpg",
+        "isSpecial": true
+      },
+      {
+        "name": "Flat White",
+        "price": 4.49,
+        "imageUrl": "https://example.com/flat-white.jpg",
+        "isSpecial": false
+      }
+    ]
+  }
+  

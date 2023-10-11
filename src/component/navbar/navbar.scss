@@ -1,22 +1,54 @@
 .navbar{
-    padding: 0 10px;
+    width: 100%;
     font-family: cursive;
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     position: sticky;
     color: #fff;
     top: 0;
-    z-index: 5;
+    z-index: 3;
     background-color: rgba(57, 56, 56, 0.5);
+    box-shadow:  0 0 20px black;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.navbar-left{
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(57, 56, 56, 0.5);
+}
+
+.navbar-left:hover{
+    cursor: pointer;
+}
+
+.navbar-right{
+    padding: 10px;
 }
 
 .navbar-right ul{
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 2px;
+}
+
+.navbar-right ul li{
+    width: 90px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-justify: distribute;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(57, 56, 56, 0.5);
 }
 
 .navbar-right ul li:hover{
