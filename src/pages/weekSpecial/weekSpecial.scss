@@ -1,20 +1,20 @@
-.Coffee-Menu{
+.week-special{
     color: black;
     width: 100%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: rgba(67, 64, 64, 0.5);
     border-radius: 5px;
-    padding-bottom: 20px;
 }
 
-.Coffee-Menu-top{
+.week-special-top{
     height: 20%;
 }
 
-.Coffee-Menu-top h1{
+.week-special-top h1{
     color: white;
     font-family: 'Trebuchet MS';
     background: rgba(67, 64, 64, 0.9);
@@ -23,29 +23,27 @@
     border-radius: 5px;
 }
 
-.Coffee-Menu-bottom{
+.week-special-bottom{
     height: 80%;
     width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     justify-content: space-around;
 }
 
-.Coffee-Menu-card{
+.week-special-card{
     height: 280px;
     width: 220px;
     background: rgba(67, 64, 64, 0.9);
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
-.Coffee-Menu-card img{
+.week-special-card img{
     width: 100%;
     height: 75%;
     border-radius: 5px;
 }
 
-.Coffee-Menu-desc{
+.week-special-desc{
     height: 25%;
     display: flex;
     flex-direction: column;
@@ -54,19 +52,17 @@
 }
 
 
-.Coffee-Menu-card h3{
+.week-special-card h3{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.Coffee-Menu-card .name{
+.week-special-card .name{
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: lighter;
 }
 
-.Coffee-Menu-card .price{
+.week-special-card .price{
     padding:2px 5px;
     border-radius: 5px;
     background-color: black;

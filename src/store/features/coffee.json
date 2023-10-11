@@ -3,61 +3,61 @@
       {
         "name": "Espresso",
         "price": 3.99,
-        "imageUrl": "https://example.com/espresso.jpg",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/6f8a487a-fca5-476d-8da3-923acc39e59c.jpg._CB272023069_.jpg",
         "isSpecial": true
       },
       {
         "name": "Cappuccino",
         "price": 4.49,
-        "imageUrl": "https://example.com/cappuccino.jpg",
+        "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.rTYiF8mEPGEHMK5IGafqTgHaHa&pid=Api&P=0&h=220",
         "isSpecial": true
       },
       {
         "name": "Latte",
         "price": 3.79,
-        "imageUrl": "https://example.com/latte.jpg",
+        "imageUrl": "https://cdn.trendhunterstatic.com/thumbs/flavored-latte.jpeg",
         "isSpecial": true
       },
       {
         "name": "Mocha",
         "price": 4.99,
-        "imageUrl": "https://example.com/mocha.jpg",
+        "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.qjobtovXvbd-OV11LCcQ7wHaHa&pid=Api&P=0&h=220",
         "isSpecial": false
       },
       {
         "name": "Americano",
         "price": 4.29,
-        "imageUrl": "https://example.com/americano.jpg",
+        "imageUrl": "https://tse1.mm.bing.net/th?id=OIP.UFEv9KdpdQpmSHYT0kaYZAHaHa&pid=Api&P=0&h=220",
         "isSpecial": true
       },
       {
         "name": "Macchiato",
         "price": 3.59,
-        "imageUrl": "https://example.com/macchiato.jpg",
+        "imageUrl": "https://copykat.com/wp-content/uploads/2021/08/Starbucks-Caramel-Macchiato-Pin-3.jpg",
         "isSpecial": false
       },
       {
         "name": "Irish Coffee",
         "price": 4.79,
-        "imageUrl": "https://example.com/irish-coffee.jpg",
+        "imageUrl": "https://www.hagengrote.at/$WS/hg1ht/websale8_shop-hg1ht/produkte/medien/bilder/gross/Irish-Coffee-_-r811.jpg",
         "isSpecial": false
       },
       {
         "name": "Caramel Macchiato",
         "price": 4.69,
-        "imageUrl": "https://example.com/caramel-macchiato.jpg",
+        "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.XoW7bMTU04-e516fnMDHOgAAAA&pid=Api&P=0&h=220",
         "isSpecial": true
       },
       {
         "name": "Affogato",
         "price": 3.89,
-        "imageUrl": "https://example.com/affogato.jpg",
+        "imageUrl": "https://tse2.mm.bing.net/th?id=OIP.dqfDTJt9qiEpwRpCsI_jdAHaJQ&pid=Api&P=0&h=220",
         "isSpecial": true
       },
       {
         "name": "Flat White",
         "price": 4.49,
-        "imageUrl": "https://example.com/flat-white.jpg",
+        "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.LhIrlWv_aEoTQIB_XWuDfAHaE4&pid=Api&P=0&h=220",
         "isSpecial": false
       }
     ]

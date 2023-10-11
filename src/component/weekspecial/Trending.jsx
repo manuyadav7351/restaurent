@@ -1,30 +1,23 @@
 import React from "react";
 import "./trending.scss";
-import tren from "../../assets/trending/eiliv-aceron.jpg";
+import { useSelector } from "react-redux";
+import { selectAllWeekSpecial } from "../../store/features/weekSpecial/weekSpecialSlice";
 
 const Trending = () => {
+
+  const weekSpecial = useSelector(selectAllWeekSpecial);
+
   return (
     <div className="trending">
+      <div className="trending-top">This weeks Special</div>
       <div className="trending-bottom">
-        {/* card */}
-        <div className="trending-card">
-          <img src={tren} alt="" />
-          <div className="trending-price">Latte - $12.00</div>
+        {weekSpecial.map( (coffee) => (
+          <div className="trending-card" key={coffee.weekSpecialId}>
+          <img src={coffee.imageUrl} alt="" />
+          <div className="trending-price">{coffee.name} - ${coffee.price}</div>
           <button className="trending-orderNow">Order Now</button>
         </div>
-        {/* card */}
-        <div className="trending-card">
-          <img src={tren} alt="" />
-          <div className="trending-price">Latte - $12.00</div>
-          <button className="trending-orderNow">Order Now</button>
-        </div>
-        {/* card */}
-        <div className="trending-card">
-          <img src={tren} alt="" />
-          <div className="trending-price">Latte - $12.00</div>
-          <button className="trending-orderNow">Order Now</button>
-        </div>
-        {/* card */}
+        ))}
       </div>
     </div>
   );

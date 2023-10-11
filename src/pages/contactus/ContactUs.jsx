@@ -17,7 +17,7 @@ const ContactUs = () => {
     const [cleared, setCleared] = useState(false);
     
     const allRequest = useSelector(SelectAllContactUsRequest);
-    console.log(allRequest);
+    // console.log(allRequest);
 
     const ContactRequestSubmit = () => {
       if(name && email && subject && content){
