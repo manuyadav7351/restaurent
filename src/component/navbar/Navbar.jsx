@@ -12,6 +12,7 @@ const Navbar = () => {
     const dispatch = useDispatch();
     const handleLogout = () => {
         dispatch(logout());
+        navigate('/login')
     };
 
     const handleStorage = () => {
