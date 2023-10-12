@@ -6,6 +6,8 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { register } from "../../store/features/register/registerSlice";
 import { useNavigate } from "react-router-dom";
+import swal from "sweetalert";
+import { icons } from "react-icons";
 
 const Register = () => {
     const dispatch = useDispatch();
@@ -31,10 +33,14 @@ const Register = () => {
     const handleRegister = () => {
         if(name && isValidEmail(email) && isValidPassword(password)){
             dispatch(register({name , email, password}))
-            navigate('/')
+            swal({title : "Success" , text : "Registration Successfull" , icon : "success" , buttons : false})
+            setTimeout(() => {
+                swal.close();
+            }, 3000)
+            navigate('/login');
         }
         else{
-            alert("enter a valid mail and Password ,\n Password Must be 6 character long and one number and letter is mandatory");
+            swal({title : "INVALID CREDENTIAL" ,text : "-> check you mail and password \n -> password must 6 char long \n -> password must contain one letter and one number" , icons : "error"})
             setEmail('')
             setPassword('')
         }

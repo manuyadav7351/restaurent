@@ -19,7 +19,7 @@ const Navbar = () => {
         dispatch(clearStorage())
     }
     
-    const allUser = useSelector(selectAllUser);
+    const allUser = useSelector(selectAllUser); 
     const isLoggedIn = useSelector(selectIsLoggedIn);
     // console.log("all user " ,allUser)
     // console.log("logged " , isLoggedIn)
@@ -39,6 +39,7 @@ const Navbar = () => {
                     {isLoggedIn ? (
                         <>
                             <li onClick={() => navigate("/reviews")}>REVIEWS</li>
+                            <li onClick={() => navigate("/cart")}>CART</li>
                             <li>ORDER</li>
                             <li>
                                 <FiUser />

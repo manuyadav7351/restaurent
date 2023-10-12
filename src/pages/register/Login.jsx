@@ -29,14 +29,19 @@ const Login = () => {
         setPassword(e.target.value);
     };
 
+
+    const logged = useSelector(selectIsLoggedIn);
+    const all = useSelector(selectAllUser);
+    
+
     const handleLogin = () => {
         try {
             dispatch(login({ email, password }));
             swal({title: "Success!", text: "Logged In Successfully!", icon: "success", buttons: false});
             setTimeout(() => {
                 swal.close();
-                navigate('/');
             }, 3000);
+            navigate('/');
         } catch (error) {
             swal({title: "Error!", text: "Invalid credentials. Please try again.", icon: "error", buttons: false});
             setTimeout(() => {

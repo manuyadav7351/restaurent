@@ -9,7 +9,6 @@ import { selectAllCoffeeMenuItem } from "../../store/features/coffeeMenu/coffeeM
 const CoffeeMenu = () => {
 
     const coffeeItem = useSelector(selectAllCoffeeMenuItem);
-    console.log(coffeeItem)
 
     // const weekSpecialMenu = useSelector(selectAllWeekSpecial);
     // weekSpecialMenu.map((coffee) => {

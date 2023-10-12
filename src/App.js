@@ -7,18 +7,22 @@ import ContactUs from './pages/contactus/ContactUs';
 import Reviews from './pages/reviews/Reviews';
 import WeekSpecial from './pages/weekSpecial/WeekSpecial';
 import { useSelector } from 'react-redux';
+import Cart from './pages/cart/Cart';
+import ProtectedRoute from "./ProtectedRoute";
+
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' exact Component={Home}/>
-        <Route path="/coffeemenu" Component={CoffeeMenu} />
-        <Route path='/weekspecial' Component={WeekSpecial} />
-        <Route path='/contactus' Component={ContactUs} />
-        <Route path='/reviews' Component={Reviews} />
-        <Route path="/login" Component={Login}/>
-        <Route path="/register" Component={Register}/>
+        <Route path='/' exact element={<Home />}/>
+        <Route path="/coffeemenu" element={<CoffeeMenu/>} />
+        <Route path='/weekspecial' element={<WeekSpecial />} />
+        <Route path='/contactus' element={<ContactUs />} />
+        <Route path='/reviews' element={<ProtectedRoute ><Reviews /></ProtectedRoute>} />
+        <Route path="/login" element={<Login />}/>
+        <Route path="/register" element={<Register />}/>
+        <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>}/>
       </Routes>
     </BrowserRouter>
   );
