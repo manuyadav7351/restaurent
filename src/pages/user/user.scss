@@ -1,4 +1,4 @@
-.cart{
+.user{
     min-height: 80vh;
     width: 80%;
     background: rgba(23, 23, 23, 0.4);
@@ -8,13 +8,13 @@
     justify-content: center;
 }
 
-.cart-top{
+.user-top{
     height: 10vh;
     width: 100%;
     text-align: center;
 }
 
-.cart-top .heading{
+.user-top .heading{
     font-size: 40px;
     font-weight: 600;
     color: white;
@@ -24,11 +24,24 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.cart-bottom{
+.user-bottom{
     width: 100%;
-    min-height: 70vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.user-bottom-desc{
+    width: 50%;
+    height: 60%;
+    background: rgba(23, 23, 23, 0.9);
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 20px;
 }

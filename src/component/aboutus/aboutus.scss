@@ -62,3 +62,24 @@
         font-size: 17px;
     }
 }
+
+@media (width < 540px) {
+    .aboutus-top h1{
+        font-size: 30px;
+    }
+
+    .aboutus-top p{
+        padding: 40px 20px;
+        font-size: 19px;
+        background: rgba(23, 23,23, 0.6);
+    }
+
+    .aboutus-footer{
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-gap: 1px; 
+            grid-auto-rows: minmax(20px, auto); 
+        }
+    }
+}

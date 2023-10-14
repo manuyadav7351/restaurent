@@ -54,3 +54,14 @@
     align-items: center;
     width: 90%;
 }
+
+@media (width < 720px){
+    .page-content{
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+}

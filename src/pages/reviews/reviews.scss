@@ -82,3 +82,17 @@
     width: 60%;
     font-size: 17px;
 }
+
+@media (width < 720px) {
+    .form-input-field{
+        width: 90%;
+    }
+
+    .form-text-area{
+        width: 90%;
+    }
+
+    .review-card{
+        width: 90%;
+    }
+}

@@ -117,3 +117,22 @@
         font-weight: 200;
     }
 }
+
+@media (width < 540px) {
+    .Coffee-Menu-bottom{
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Coffee-Menu-card{
+        height: 100%px;
+        width: 100%;
+    }
+
+    .Coffee-Menu-card .name{
+        color: white;
+        font-size: 18px;
+        font-family: Roboto, Oxygen, Ubuntu,;
+        font-weight: 200;
+    }
+}

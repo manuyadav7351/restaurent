@@ -144,8 +144,8 @@
     }
 
     .trending-card{
-        height: 200px;
-        width: 150px;
+        height: 230px;
+        width: 160px;
         background-color: rgb(116, 109, 109);
         border-radius: 10px;
         display: flex;
@@ -155,8 +155,8 @@
     }
     
     .trending-card img{
-        height: 150px;
-        width: 150px;
+        height: 100%;
+        width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
