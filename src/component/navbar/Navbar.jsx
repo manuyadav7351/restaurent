@@ -41,7 +41,7 @@ const Navbar = () => {
                             <li onClick={() => navigate("/reviews")}>REVIEWS</li>
                             <li onClick={() => navigate("/cart")}>CART</li>
                             <li>ORDER</li>
-                            <li>
+                            <li onClick={() => navigate("/user")}>
                                 <FiUser />
                             </li>
                             <li onClick={handleLogout}>LOGOUT</li>

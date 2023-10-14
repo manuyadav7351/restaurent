@@ -1,60 +1,70 @@
 {
     "coffeeMenu": [
       {
+        "coffeeId" : "1",
         "name": "Espresso",
         "price": 3.99,
         "imageUrl": "https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/6f8a487a-fca5-476d-8da3-923acc39e59c.jpg._CB272023069_.jpg",
         "isSpecial": true
       },
       {
+        "coffeeId" : "2",
         "name": "Cappuccino",
         "price": 4.49,
         "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.rTYiF8mEPGEHMK5IGafqTgHaHa&pid=Api&P=0&h=220",
         "isSpecial": true
       },
       {
+        "coffeeId" : "3",
         "name": "Latte",
         "price": 3.79,
         "imageUrl": "https://cdn.trendhunterstatic.com/thumbs/flavored-latte.jpeg",
         "isSpecial": true
       },
       {
+        "coffeeId" : "4",
         "name": "Mocha",
         "price": 4.99,
         "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.qjobtovXvbd-OV11LCcQ7wHaHa&pid=Api&P=0&h=220",
         "isSpecial": false
       },
       {
+        "coffeeId" : "5",
         "name": "Americano",
         "price": 4.29,
         "imageUrl": "https://tse1.mm.bing.net/th?id=OIP.UFEv9KdpdQpmSHYT0kaYZAHaHa&pid=Api&P=0&h=220",
         "isSpecial": true
       },
       {
+        "coffeeId" : "6",
         "name": "Macchiato",
         "price": 3.59,
         "imageUrl": "https://copykat.com/wp-content/uploads/2021/08/Starbucks-Caramel-Macchiato-Pin-3.jpg",
         "isSpecial": false
       },
       {
+        "coffeeId" : "7",
         "name": "Irish Coffee",
         "price": 4.79,
         "imageUrl": "https://www.hagengrote.at/$WS/hg1ht/websale8_shop-hg1ht/produkte/medien/bilder/gross/Irish-Coffee-_-r811.jpg",
         "isSpecial": false
       },
       {
+        "coffeeId" : "8",
         "name": "Caramel Macchiato",
         "price": 4.69,
         "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.XoW7bMTU04-e516fnMDHOgAAAA&pid=Api&P=0&h=220",
         "isSpecial": true
       },
       {
+        "coffeeId" : "9",
         "name": "Affogato",
         "price": 3.89,
         "imageUrl": "https://tse2.mm.bing.net/th?id=OIP.dqfDTJt9qiEpwRpCsI_jdAHaJQ&pid=Api&P=0&h=220",
         "isSpecial": true
       },
       {
+        "coffeeId" : "10",
         "name": "Flat White",
         "price": 4.49,
         "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.LhIrlWv_aEoTQIB_XWuDfAHaE4&pid=Api&P=0&h=220",

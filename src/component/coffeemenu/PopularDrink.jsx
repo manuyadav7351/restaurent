@@ -1,12 +1,13 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./popularDrink.scss";
-import { selectAllCoffeeMenuItem } from "../../store/features/coffeeMenu/coffeeMenuSlice";
-import { useSelector } from "react-redux";
+import { clearCoffee, selectAllCoffeeMenuItem } from "../../store/features/coffeeMenu/coffeeMenuSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const PopularDrink = () => {
+    const dispatch = useDispatch();
     const coffeeMenu = useSelector(selectAllCoffeeMenuItem);
-    console.log(coffeeMenu);
-
+    const navigate = useNavigate();
     const drinkConatinerRef = useRef(null);
     const prev = () => {
         drinkConatinerRef.current.scrollLeft -= 280;
@@ -14,6 +15,14 @@ const PopularDrink = () => {
     const next = () => {
         drinkConatinerRef.current.scrollLeft += 280;
     };
+
+    const handleOrder = (Id) => {
+        navigate('/order',  {state : Id})
+    }
+
+    useEffect(()=>{
+        dispatch(clearCoffee());
+    },[])
 
     return (
         <>
@@ -46,7 +55,7 @@ const PopularDrink = () => {
                                         </div>
 
                                         <div className="drink-order">
-                                            <button>Order Now</button>
+                                            <button onClick={() => handleOrder(coffee.coffeeId)}>Order Now</button>
                                         </div>
                                     </div>
                                 </div>

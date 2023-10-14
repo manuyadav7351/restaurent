@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../component/navbar/Navbar";
 import "./coffeeMenu.scss";
 import "../pages.scss";
-import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { selectAllWeekSpecial } from "../../store/features/weekSpecial/weekSpecialSlice";
 import { selectAllCoffeeMenuItem } from "../../store/features/coffeeMenu/coffeeMenuSlice";
+import { clearCoffee } from "../../store/features/coffeeMenu/coffeeMenuSlice";
+
 
 const CoffeeMenu = () => {
 
+    const dispatch = useDispatch();
     const coffeeItem = useSelector(selectAllCoffeeMenuItem);
+    const navigate = useNavigate();
 
-    // const weekSpecialMenu = useSelector(selectAllWeekSpecial);
-    // weekSpecialMenu.map((coffee) => {
-    //     console.log(coffee);
-    // });
+    // console.log(coffeeItem)
+
+    const handleOrder = (Id) => {
+        navigate('/order',  {state : Id})
+    }
+
+    useEffect(()=>{
+        dispatch(clearCoffee());
+    },[])
 
     return (
         <div className="coffee-page">
@@ -40,7 +50,7 @@ const CoffeeMenu = () => {
                                                 {coffee.price}{" "}
                                             </span>
                                         </h3>
-                                        <button className="Order-Now">
+                                        <button className="Order-Now" onClick={() => handleOrder(coffee.coffeeId)}>
                                             Order Now
                                         </button>
                                     </div>

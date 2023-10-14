@@ -3,11 +3,13 @@ import "./header.scss"
 import whiteCoffee from "../../assets/white-coffee.jpg";
 import blackCoffee from "../../assets/black-coffee.jpg";
 import { useNavigate } from 'react-router-dom';
-
+import { selectIsLoggedIn } from '../../store/features/register/registerSlice';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
 
   const navigate = useNavigate();
+  const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return (
     <div className='header'>
@@ -30,7 +32,7 @@ const Header = () => {
         </div>
         </div>
         <div className='header-register'>
-          <button onClick={() => navigate("/register")}>Register</button>
+          {isLoggedIn ? '' : <button onClick={ () => navigate("/register")}>Register</button>}
         </div>
       </div>
     </div>
